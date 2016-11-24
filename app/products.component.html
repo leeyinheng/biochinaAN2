@@ -1,0 +1,13 @@
+<a routerLink="/cart" routerLinkActive="active"><img src="app/Services/Model/Photos/cart.jpg" alt="cart Icon" style="width:50px;height:50px;">  購物車(結帳)</a>
+<p>
+<span class="badge">數量: {{count}} </span>
+<span class="badge">總價: {{totalprice}} </span>
+<div class="grid grid-pad">
+  <div *ngFor="let product of products" class="col-1-4">
+    <div class="panel panel-default">
+      <div class="panel-heading">{{product.Name}}  <img [src]='product.Photo'>  <h4 class="label label-primary"> 價格: NT {{product.Price}}    </h4> &nbsp;   <button class="btn btn-info" (click)="add(product)">加入購物車</button> </div>
+      <div class="panel-body">{{product.Description}}</div>
+
+    </div>
+  </div>
+</div>
