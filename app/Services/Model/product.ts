@@ -7,5 +7,6 @@ export class Product{
     Photo: string; 
     Volume? : number; 
     SellPrice? : number; 
+    Promotion?: boolean = false;  
 
 }

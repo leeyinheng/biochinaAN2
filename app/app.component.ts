@@ -5,8 +5,10 @@ import { Component } from '@angular/core';
   moduleId: module.id,
   selector: 'my-app',
   template: `
-  <img src='app/Services/Model/Photos/logo.jpg'/> 
-  <h1> {{title}}</h1>
+  
+  <span><img src='app/Services/Model/Photos/logo.jpg'/></span> 
+  <h1 class="lead"> {{title}}</h1>
+
   <router-outlet></router-outlet>
 `,
 

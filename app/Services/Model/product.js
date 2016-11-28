@@ -1,6 +1,7 @@
 "use strict";
 var Product = (function () {
     function Product() {
+        this.Promotion = false;
     }
     return Product;
 }());

@@ -57,7 +57,7 @@ var CartComponent = (function () {
         }
     };
     CartComponent.prototype.submitorder = function () {
-        if (this.validate() == true) {
+        if (this.validate() == true && confirm("請確認您的訂購資訊: 總價-" + this.totalamount + "|電話-" + this.Phone + "|Email-" + this.Email + "|送件地址-" + this.Address)) {
             var ordernumber = "BC" + Number(new Date());
             this.htmlstring = "<style> table {border-collapse: collapse; width: 70%;} th, td {padding: 8px;text-align: left;border-bottom: 1px solid #ddd;}</style>";
             this.htmlstring = "<div>訂購人: " + this.Name + "</div><p>";
