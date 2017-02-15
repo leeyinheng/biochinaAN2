@@ -17,7 +17,7 @@ var AppComponent = (function () {
         core_1.Component({
             moduleId: module.id,
             selector: 'my-app',
-            template: "\n  <img src='app/Services/Model/Photos/logo.jpg'/> \n  <h1> {{title}}</h1>\n  <router-outlet></router-outlet>\n",
+            template: "\n  \n  <span><img src='app/Services/Model/Photos/logo.jpg'/></span> \n  <h1 class=\"lead\"> {{title}}</h1>\n\n  <router-outlet></router-outlet>\n",
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);

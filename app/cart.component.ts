@@ -117,7 +117,7 @@ export class CartComponent implements OnInit {
 
   submitorder(): void{
 
-      if (this.validate() == true)
+      if (this.validate() == true && confirm("請確認您的訂購資訊: 總價-" + this.totalamount + "|電話-" + this.Phone + "|Email-" + this.Email + "|送件地址-"+ this.Address))
       { 
          let ordernumber: string = "BC" + Number(new Date()); 
 
