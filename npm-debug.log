@@ -2,14 +2,14 @@
 1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
 1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
 1 verbose cli   'start' ]
-2 info using npm@3.10.8
-3 info using node@v6.9.1
+2 info using npm@3.10.10
+3 info using node@v6.9.5
 4 verbose run-script [ 'prestart', 'start', 'poststart' ]
 5 info lifecycle angular-shoppingcart@1.0.1~prestart: angular-shoppingcart@1.0.1
 6 silly lifecycle angular-shoppingcart@1.0.1~prestart: no script for prestart, continuing
 7 info lifecycle angular-shoppingcart@1.0.1~start: angular-shoppingcart@1.0.1
 8 verbose lifecycle angular-shoppingcart@1.0.1~start: unsafe-perm in lifecycle true
-9 verbose lifecycle angular-shoppingcart@1.0.1~start: PATH: C:\Program Files\nodejs\node_modules\npm\bin\node-gyp-bin;C:\Users\lee_y\OneDrive\Projects\Github\shopping-cart-angular2\biochinaAN2\node_modules\.bin;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\130\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\Tools\Binn\ManagementStudio\;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files\nodejs\;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\Program Files (x86)\Microsoft Emulator Manager\1.0\;C:\Users\lee_y\AppData\Local\Microsoft\WindowsApps;;C:\Program Files (x86)\Microsoft VS Code\bin;C:\Users\lee_y\AppData\Roaming\npm
+9 verbose lifecycle angular-shoppingcart@1.0.1~start: PATH: C:\Program Files\nodejs\node_modules\npm\bin\node-gyp-bin;C:\Users\lee_y\OneDrive\Projects\Github\shopping-cart-angular2\biochinaAN2\node_modules\.bin;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\130\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\Tools\Binn\ManagementStudio\;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\nodejs\;C:\Program Files\dotnet\;C:\Program Files (x86)\Microsoft Emulator Manager\1.0\;C:\Program Files\Git\cmd;C:\Users\lee_y\AppData\Local\Microsoft\WindowsApps;;C:\Program Files (x86)\Microsoft VS Code\bin;C:\Users\lee_y\AppData\Roaming\npm
 10 verbose lifecycle angular-shoppingcart@1.0.1~start: CWD: C:\Users\lee_y\OneDrive\Projects\Github\shopping-cart-angular2\biochinaAN2
 11 silly lifecycle angular-shoppingcart@1.0.1~start: Args: [ '/d /s /c', 'tsc && concurrently "tsc -w" "lite-server" ' ]
 12 silly lifecycle angular-shoppingcart@1.0.1~start: Returned: code: 3221225786  signal: null
@@ -28,8 +28,8 @@
 16 verbose cwd C:\Users\lee_y\OneDrive\Projects\Github\shopping-cart-angular2\biochinaAN2
 17 error Windows_NT 10.0.14393
 18 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "start"
-19 error node v6.9.1
-20 error npm  v3.10.8
+19 error node v6.9.5
+20 error npm  v3.10.10
 21 error code ELIFECYCLE
 22 error angular-shoppingcart@1.0.1 start: `tsc && concurrently "tsc -w" "lite-server" `
 22 error Exit status 3221225786
