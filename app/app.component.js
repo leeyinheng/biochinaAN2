@@ -11,7 +11,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var AppComponent = (function () {
     function AppComponent() {
-        this.title = '中華生物科技 購物車';
+        this.title = '';
     }
     AppComponent = __decorate([
         core_1.Component({

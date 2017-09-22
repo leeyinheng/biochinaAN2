@@ -19,6 +19,7 @@ import { AppComponent }         from './app.component';
 import { ProductsComponent }    from './products.component';
 import { MenuComponent }        from './menu.component';
 import { CartComponent }        from './cart.component';
+import {StoneweightComponent} from './stoneweight/stoneweight.component'; 
 
 @NgModule({
   imports: [
@@ -39,6 +40,10 @@ import { CartComponent }        from './cart.component';
       {
         path:'cart', 
         component: CartComponent
+      },
+      {
+        path:'stoneweight',
+        component: StoneweightComponent
       }
     ])
   ],
@@ -46,7 +51,8 @@ import { CartComponent }        from './cart.component';
     AppComponent,
     ProductsComponent,
     MenuComponent,
-    CartComponent 
+    CartComponent,
+    StoneweightComponent
   ],
 
   providers: [

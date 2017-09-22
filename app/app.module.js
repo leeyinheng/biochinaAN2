@@ -23,6 +23,7 @@ var app_component_1 = require('./app.component');
 var products_component_1 = require('./products.component');
 var menu_component_1 = require('./menu.component');
 var cart_component_1 = require('./cart.component');
+var stoneweight_component_1 = require('./stoneweight/stoneweight.component');
 var AppModule = (function () {
     function AppModule() {
     }
@@ -46,6 +47,10 @@ var AppModule = (function () {
                     {
                         path: 'cart',
                         component: cart_component_1.CartComponent
+                    },
+                    {
+                        path: 'stoneweight',
+                        component: stoneweight_component_1.StoneweightComponent
                     }
                 ])
             ],
@@ -53,7 +58,8 @@ var AppModule = (function () {
                 app_component_1.AppComponent,
                 products_component_1.ProductsComponent,
                 menu_component_1.MenuComponent,
-                cart_component_1.CartComponent
+                cart_component_1.CartComponent,
+                stoneweight_component_1.StoneweightComponent
             ],
             providers: [
                 product_service_1.ProductService,

@@ -15,5 +15,5 @@ import { Component } from '@angular/core';
 
 })
 export class AppComponent {
-  title = '中華生物科技 購物車';
+  title = '';
 }
