@@ -21,6 +21,8 @@ import { MenuComponent }        from './menu.component';
 import { CartComponent }        from './cart.component';
 import {StoneweightComponent} from './stoneweight.component'; 
 
+import { LocationStrategy, HashLocationStrategy } from '@angular/common';
+
 @NgModule({
   imports: [
     BrowserModule,
@@ -58,7 +60,8 @@ import {StoneweightComponent} from './stoneweight.component';
   providers: [
     ProductService,
     ShopCartService, 
-    EmailService
+    EmailService, 
+    {provide: LocationStrategy, useClass: HashLocationStrategy}
   ],
   bootstrap: [AppComponent]
 })

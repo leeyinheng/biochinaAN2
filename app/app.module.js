@@ -24,6 +24,7 @@ var products_component_1 = require('./products.component');
 var menu_component_1 = require('./menu.component');
 var cart_component_1 = require('./cart.component');
 var stoneweight_component_1 = require('./stoneweight.component');
+var common_1 = require('@angular/common');
 var AppModule = (function () {
     function AppModule() {
     }
@@ -64,7 +65,8 @@ var AppModule = (function () {
             providers: [
                 product_service_1.ProductService,
                 shop_cart_service_1.ShopCartService,
-                emailservice_1.EmailService
+                emailservice_1.EmailService,
+                { provide: common_1.LocationStrategy, useClass: common_1.HashLocationStrategy }
             ],
             bootstrap: [app_component_1.AppComponent]
         }), 
