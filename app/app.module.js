@@ -23,7 +23,7 @@ var app_component_1 = require('./app.component');
 var products_component_1 = require('./products.component');
 var menu_component_1 = require('./menu.component');
 var cart_component_1 = require('./cart.component');
-var stoneweight_component_1 = require('./stoneweight/stoneweight.component');
+var stoneweight_component_1 = require('./stoneweight.component');
 var AppModule = (function () {
     function AppModule() {
     }

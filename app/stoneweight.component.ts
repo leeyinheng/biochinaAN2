@@ -3,8 +3,9 @@ import {weight} from "./Weight"
 
 
 @Component({
-    templateUrl:'./app/stoneweight/stoneweight.component.html', 
-    styleUrls:['./app/stoneweight/stoneweight.component.css']
+    moduleId: module.id,
+    templateUrl:'stoneweight.component.html', 
+    styleUrls:['stoneweight.component.css']
 })
 
 

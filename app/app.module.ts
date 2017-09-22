@@ -19,7 +19,7 @@ import { AppComponent }         from './app.component';
 import { ProductsComponent }    from './products.component';
 import { MenuComponent }        from './menu.component';
 import { CartComponent }        from './cart.component';
-import {StoneweightComponent} from './stoneweight/stoneweight.component'; 
+import {StoneweightComponent} from './stoneweight.component'; 
 
 @NgModule({
   imports: [
