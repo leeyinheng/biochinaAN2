@@ -13,6 +13,7 @@ import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { ProductService }    from './Services/product.service';
 import { ShopCartService }    from './Services/shop-cart.service';
 import { EmailService }    from './Services/emailservice';
+import {ListEmailService} from './Services/list-email.service'; 
 
 //Components
 import { AppComponent }         from './app.component';
@@ -61,6 +62,7 @@ import { LocationStrategy, HashLocationStrategy } from '@angular/common';
     ProductService,
     ShopCartService, 
     EmailService, 
+    ListEmailService, 
     {provide: LocationStrategy, useClass: HashLocationStrategy}
   ],
   bootstrap: [AppComponent]

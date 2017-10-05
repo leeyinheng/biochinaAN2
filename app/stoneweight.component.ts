@@ -1,5 +1,8 @@
-import { Component, OnInit } from "@angular/core"; 
-import {weight} from "./Weight"
+import { Component, OnInit } from "@angular/core";
+ 
+import {weight} from "./Weight"; 
+
+import {ListEmailService} from './Services/list-email.service'; 
 
 
 @Component({
@@ -15,7 +18,7 @@ export class StoneweightComponent implements OnInit{
         console.log('stoneweight oninit');
     }
 
-    constructor(){
+    constructor(private emailservice: ListEmailService){
 
     }
 
@@ -47,6 +50,17 @@ export class StoneweightComponent implements OnInit{
         this.caculateweightrate; 
     }
 
+    _emailaddress : string; 
+
+    get emailaddress(): string {
+        return this._emailaddress; 
+    }
+
+    set emailaddress(value:string)
+    {
+        this._emailaddress = value; 
+    }
+
     ratioweight: string = '尚未有數值'; 
     
     caculateweightrate() : string {
@@ -74,6 +88,22 @@ export class StoneweightComponent implements OnInit{
 
         this._weightList = value; 
 
+    }
+
+    emailout(){
+
+         if (typeof this.emailaddress !== 'undefined')    
+        {
+           
+
+            this.emailservice.SendWeightEmail(this.weightList,this.emailaddress,"玉石比重測定單-"); 
+        }
+        else 
+        {
+            alert("請輸入郵件地址!"); 
+        }
+      
+    
     }
 
     addintolist(){

@@ -10,8 +10,10 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require("@angular/core");
 var Weight_1 = require("./Weight");
+var list_email_service_1 = require('./Services/list-email.service');
 var StoneweightComponent = (function () {
-    function StoneweightComponent() {
+    function StoneweightComponent(emailservice) {
+        this.emailservice = emailservice;
         this.ratioweight = '尚未有數值';
     }
     StoneweightComponent.prototype.ngOnInit = function () {
@@ -39,6 +41,16 @@ var StoneweightComponent = (function () {
         enumerable: true,
         configurable: true
     });
+    Object.defineProperty(StoneweightComponent.prototype, "emailaddress", {
+        get: function () {
+            return this._emailaddress;
+        },
+        set: function (value) {
+            this._emailaddress = value;
+        },
+        enumerable: true,
+        configurable: true
+    });
     StoneweightComponent.prototype.caculateweightrate = function () {
         if (typeof this.waterweight !== 'undefined' && this.waterweight !== 0 && this.airweight !== 0) {
             var diffweight = (this.airweight - this.waterweight);
@@ -56,6 +68,14 @@ var StoneweightComponent = (function () {
         enumerable: true,
         configurable: true
     });
+    StoneweightComponent.prototype.emailout = function () {
+        if (typeof this.emailaddress !== 'undefined') {
+            this.emailservice.SendWeightEmail(this.weightList, this.emailaddress, "玉石比重測定單-");
+        }
+        else {
+            alert("請輸入郵件地址!");
+        }
+    };
     StoneweightComponent.prototype.addintolist = function () {
         if (this.ratioweight !== '尚未有數值') {
             var index = 0;
@@ -84,7 +104,7 @@ var StoneweightComponent = (function () {
             templateUrl: 'stoneweight.component.html',
             styleUrls: ['stoneweight.component.css']
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [list_email_service_1.ListEmailService])
     ], StoneweightComponent);
     return StoneweightComponent;
 }());

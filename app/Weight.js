@@ -9,4 +9,4 @@ var weight = (function () {
     return weight;
 }());
 exports.weight = weight;
-//# sourceMappingURL=Weight.js.map
+//# sourceMappingURL=weight.js.map

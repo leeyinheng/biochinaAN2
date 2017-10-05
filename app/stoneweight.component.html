@@ -19,13 +19,15 @@
     
             </td>
             <td>
-                <input type="text"
+                <input type="number"
                 [(ngModel)]='airweight'
+                style="width: 6em;"
                 /> 
             </td>
             <td>
-                <input type="text"
-                [(ngModel)]='waterweight'
+                <input type="number"
+                [(ngModel)]='waterweight'  
+                style="width: 6em;"
                 /> 
             </td>
             <td>
@@ -53,6 +55,27 @@
 
 </table>
 
+<table *ngIf="weightList?.length > 0">
+    <tr>
+        <td>
+            Email: 
+        </td>
+        <td>
+            <input type="string"
+            [(ngModel)]='emailaddress'  
+            style="width: 15em;"
+            /> 
+        </td>
+        <td>
+            <span></span>
+        </td>
+        <td>
+            <button class="btn btn-info" (click) = 'emailout()'>
+                寄出
+             </button>
+        </td>
+    </tr>
+</table>
 
 
 

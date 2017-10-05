@@ -18,6 +18,7 @@ var http_1 = require('@angular/http');
 var product_service_1 = require('./Services/product.service');
 var shop_cart_service_1 = require('./Services/shop-cart.service');
 var emailservice_1 = require('./Services/emailservice');
+var list_email_service_1 = require('./Services/list-email.service');
 //Components
 var app_component_1 = require('./app.component');
 var products_component_1 = require('./products.component');
@@ -66,6 +67,7 @@ var AppModule = (function () {
                 product_service_1.ProductService,
                 shop_cart_service_1.ShopCartService,
                 emailservice_1.EmailService,
+                list_email_service_1.ListEmailService,
                 { provide: common_1.LocationStrategy, useClass: common_1.HashLocationStrategy }
             ],
             bootstrap: [app_component_1.AppComponent]
